@@ -1,0 +1,20 @@
+on:
+  pull_request:
+    branches: [main]
+    
+jobs:
+  veracode-sca-task:
+    runs-on: ubuntu-latest
+    name: Scan remote repository for Issues
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Run Veracode SCA
+        env:
+          SRCCLR_API_TOKEN: ${{ secrets.SRCCLR_API_TOKEN }}
+        uses: veracode/veracode-sca@v2.0.63
+        with:
+#          github_token: ${{ secrets.GITHUB_TOKEN }}
+          create-issues: true
+#          debug: true
