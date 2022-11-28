@@ -12,7 +12,7 @@
 
 <title>Login to Blab</title>
 
-<!-- Bootstrap core CSS test -->
+<!-- Bootstrap core CSS -->
 <link href="resources/css/bootstrap.min.css" rel="stylesheet">
 <!-- Bootstrap theme -->
 <link href="resources/css/bootstrap-theme.min.css" rel="stylesheet">
