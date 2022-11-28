@@ -4,15 +4,15 @@
       "href": "/"
     },
     "self": {
-      "href": "/scans/d4bd2925-33e3-4afc-befd-874fa15c9774/findings"
+      "href": "/scans/3e890fdf-60a8-4bc1-b7ac-6e5271f70d5c/findings"
     },
     "help": {
       "href": "https://help.veracode.com/reader/tS9CaFwL4_lbIEWWomsJoA/ovfZGgu96UINQxIuTqRDwg"
     }
   },
-  "scan_id": "d4bd2925-33e3-4afc-befd-874fa15c9774",
+  "scan_id": "3e890fdf-60a8-4bc1-b7ac-6e5271f70d5c",
   "scan_status": "SUCCESS",
-  "message": "Scan successful. Results size: 349719 bytes",
+  "message": "Scan successful. Results size: 349715 bytes",
   "modules": [
     "verademo.war",
     "JS files within verademo.war"
@@ -2789,7 +2789,7 @@
     },
     {
       "title": "javax.servlet.jsp.JspWriter.print",
-      "issue_id": 1256,
+      "issue_id": 1257,
       "gob": "B",
       "severity": 3,
       "issue_type_id": "taint",
@@ -2903,7 +2903,7 @@
     },
     {
       "title": "javax.servlet.jsp.JspWriter.print",
-      "issue_id": 1263,
+      "issue_id": 1265,
       "gob": "B",
       "severity": 3,
       "issue_type_id": "taint",
@@ -2941,7 +2941,7 @@
     },
     {
       "title": "javax.servlet.jsp.JspWriter.print",
-      "issue_id": 1255,
+      "issue_id": 1256,
       "gob": "B",
       "severity": 3,
       "issue_type_id": "taint",
@@ -2979,7 +2979,7 @@
     },
     {
       "title": "javax.servlet.jsp.JspWriter.print",
-      "issue_id": 1261,
+      "issue_id": 1263,
       "gob": "B",
       "severity": 3,
       "issue_type_id": "taint",
@@ -3017,7 +3017,7 @@
     },
     {
       "title": "javax.servlet.jsp.JspWriter.print",
-      "issue_id": 1254,
+      "issue_id": 1255,
       "gob": "B",
       "severity": 3,
       "issue_type_id": "taint",
@@ -3055,7 +3055,7 @@
     },
     {
       "title": "javax.servlet.jsp.JspWriter.print",
-      "issue_id": 1252,
+      "issue_id": 1253,
       "gob": "B",
       "severity": 3,
       "issue_type_id": "taint",
@@ -3131,7 +3131,7 @@
     },
     {
       "title": "javax.servlet.jsp.JspWriter.print",
-      "issue_id": 1270,
+      "issue_id": 1271,
       "gob": "B",
       "severity": 3,
       "issue_type_id": "taint",
@@ -3245,7 +3245,7 @@
     },
     {
       "title": "javax.servlet.jsp.JspWriter.print",
-      "issue_id": 1260,
+      "issue_id": 1262,
       "gob": "B",
       "severity": 3,
       "issue_type_id": "taint",
@@ -3359,7 +3359,7 @@
     },
     {
       "title": "javax.servlet.jsp.JspWriter.print",
-      "issue_id": 1274,
+      "issue_id": 1251,
       "gob": "B",
       "severity": 3,
       "issue_type_id": "taint",
@@ -3369,7 +3369,7 @@
       "files": {
         "source_file": {
           "file": "WEB-INF/views/login.jsp",
-          "line": 58,
+          "line": 62,
           "function_name": "_jspService",
           "qualified_function_name": "com.veracode.compiledjsp.xverademowar.WEB_002dINF.views.login_jsp._jspService",
           "function_prototype": "void _jspService(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)",
@@ -3377,7 +3377,7 @@
         }
       },
       "flaw_match": {
-        "procedure_hash": "1707223166",
+        "procedure_hash": "401896414",
         "prototype_hash": "3087822160",
         "flaw_hash": "3765405848",
         "flaw_hash_count": 3,
@@ -3397,7 +3397,7 @@
     },
     {
       "title": "javax.servlet.jsp.JspWriter.print",
-      "issue_id": 1251,
+      "issue_id": 1261,
       "gob": "B",
       "severity": 3,
       "issue_type_id": "taint",
@@ -3407,7 +3407,7 @@
       "files": {
         "source_file": {
           "file": "WEB-INF/views/login.jsp",
-          "line": 77,
+          "line": 81,
           "function_name": "_jspService",
           "qualified_function_name": "com.veracode.compiledjsp.xverademowar.WEB_002dINF.views.login_jsp._jspService",
           "function_prototype": "void _jspService(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)",
@@ -3415,7 +3415,7 @@
         }
       },
       "flaw_match": {
-        "procedure_hash": "1707223166",
+        "procedure_hash": "401896414",
         "prototype_hash": "3087822160",
         "flaw_hash": "3765405848",
         "flaw_hash_count": 3,
@@ -3435,7 +3435,7 @@
     },
     {
       "title": "javax.servlet.jsp.JspWriter.print",
-      "issue_id": 1269,
+      "issue_id": 1275,
       "gob": "B",
       "severity": 3,
       "issue_type_id": "taint",
@@ -3445,7 +3445,7 @@
       "files": {
         "source_file": {
           "file": "WEB-INF/views/login.jsp",
-          "line": 84,
+          "line": 88,
           "function_name": "_jspService",
           "qualified_function_name": "com.veracode.compiledjsp.xverademowar.WEB_002dINF.views.login_jsp._jspService",
           "function_prototype": "void _jspService(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)",
@@ -3453,7 +3453,7 @@
         }
       },
       "flaw_match": {
-        "procedure_hash": "1707223166",
+        "procedure_hash": "401896414",
         "prototype_hash": "3087822160",
         "flaw_hash": "3765405848",
         "flaw_hash_count": 3,
@@ -3473,7 +3473,7 @@
     },
     {
       "title": "javax.servlet.jsp.JspWriter.print",
-      "issue_id": 1273,
+      "issue_id": 1274,
       "gob": "B",
       "severity": 3,
       "issue_type_id": "taint",
@@ -3587,7 +3587,7 @@
     },
     {
       "title": "javax.servlet.jsp.JspWriter.print",
-      "issue_id": 1259,
+      "issue_id": 1260,
       "gob": "B",
       "severity": 3,
       "issue_type_id": "taint",
@@ -3701,7 +3701,7 @@
     },
     {
       "title": "javax.servlet.jsp.JspWriter.print",
-      "issue_id": 1267,
+      "issue_id": 1269,
       "gob": "B",
       "severity": 3,
       "issue_type_id": "taint",
@@ -3739,7 +3739,7 @@
     },
     {
       "title": "javax.servlet.jsp.JspWriter.print",
-      "issue_id": 1258,
+      "issue_id": 1259,
       "gob": "B",
       "severity": 3,
       "issue_type_id": "taint",
@@ -3853,7 +3853,7 @@
     },
     {
       "title": "javax.servlet.jsp.JspWriter.print",
-      "issue_id": 1257,
+      "issue_id": 1258,
       "gob": "B",
       "severity": 3,
       "issue_type_id": "taint",
@@ -3891,7 +3891,7 @@
     },
     {
       "title": "javax.servlet.jsp.JspWriter.print",
-      "issue_id": 1265,
+      "issue_id": 1267,
       "gob": "B",
       "severity": 3,
       "issue_type_id": "taint",
@@ -3967,7 +3967,7 @@
     },
     {
       "title": "javax.servlet.jsp.JspWriter.print",
-      "issue_id": 1271,
+      "issue_id": 1272,
       "gob": "B",
       "severity": 3,
       "issue_type_id": "taint",
@@ -4837,7 +4837,7 @@
     },
     {
       "title": "javax.servlet.jsp.JspWriter.print",
-      "issue_id": 1264,
+      "issue_id": 1266,
       "gob": "B",
       "severity": 2,
       "issue_type_id": "taint",
@@ -4875,7 +4875,7 @@
     },
     {
       "title": "javax.servlet.jsp.JspWriter.print",
-      "issue_id": 1262,
+      "issue_id": 1264,
       "gob": "B",
       "severity": 2,
       "issue_type_id": "taint",
@@ -4913,7 +4913,7 @@
     },
     {
       "title": "javax.servlet.jsp.JspWriter.print",
-      "issue_id": 1253,
+      "issue_id": 1254,
       "gob": "B",
       "severity": 2,
       "issue_type_id": "taint",
@@ -4951,7 +4951,7 @@
     },
     {
       "title": "javax.servlet.jsp.JspWriter.print",
-      "issue_id": 1275,
+      "issue_id": 1252,
       "gob": "B",
       "severity": 2,
       "issue_type_id": "taint",
@@ -4961,7 +4961,7 @@
       "files": {
         "source_file": {
           "file": "WEB-INF/views/login.jsp",
-          "line": 58,
+          "line": 62,
           "function_name": "_jspService",
           "qualified_function_name": "com.veracode.compiledjsp.xverademowar.WEB_002dINF.views.login_jsp._jspService",
           "function_prototype": "void _jspService(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)",
@@ -4969,7 +4969,7 @@
         }
       },
       "flaw_match": {
-        "procedure_hash": "1707223166",
+        "procedure_hash": "401896414",
         "prototype_hash": "3087822160",
         "flaw_hash": "3765405848",
         "flaw_hash_count": 3,
@@ -5027,7 +5027,7 @@
     },
     {
       "title": "javax.servlet.jsp.JspWriter.print",
-      "issue_id": 1268,
+      "issue_id": 1270,
       "gob": "B",
       "severity": 2,
       "issue_type_id": "taint",
@@ -5065,7 +5065,7 @@
     },
     {
       "title": "javax.servlet.jsp.JspWriter.print",
-      "issue_id": 1266,
+      "issue_id": 1268,
       "gob": "B",
       "severity": 2,
       "issue_type_id": "taint",
