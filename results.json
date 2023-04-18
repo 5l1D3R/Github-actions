@@ -4,15 +4,15 @@
       "href": "/"
     },
     "self": {
-      "href": "/scans/3e890fdf-60a8-4bc1-b7ac-6e5271f70d5c/findings"
+      "href": "/scans/20404650-943f-4d21-83f8-62feb5897873/findings"
     },
     "help": {
       "href": "https://help.veracode.com/reader/tS9CaFwL4_lbIEWWomsJoA/ovfZGgu96UINQxIuTqRDwg"
     }
   },
-  "scan_id": "3e890fdf-60a8-4bc1-b7ac-6e5271f70d5c",
+  "scan_id": "20404650-943f-4d21-83f8-62feb5897873",
   "scan_status": "SUCCESS",
-  "message": "Scan successful. Results size: 349715 bytes",
+  "message": "Scan successful. Results size: 344386 bytes",
   "modules": [
     "verademo.war",
     "JS files within verademo.war"
@@ -956,44 +956,6 @@
         ]
       },
       "flaw_details_link": "https://downloads.veracode.com/securityscan/cwe/v4/java/601.html"
-    },
-    {
-      "title": "org.apache.log4j.Category.info",
-      "issue_id": 1217,
-      "gob": "B",
-      "severity": 3,
-      "issue_type_id": "taint",
-      "issue_type": "Improper Output Neutralization for Logs",
-      "cwe_id": "117",
-      "display_text": "\u003cspan\u003eThis call to org.apache.log4j.Category.info() could result in a log forging attack.  Writing untrusted data into a log file allows an attacker to forge log entries or inject malicious content into log files.  Corrupted log files can be used to cover an attacker\u0027s tracks or as a delivery mechanism for an attack on a log viewing or processing utility.  For example, if a web administrator uses a browser-based utility to review logs, a cross-site scripting attack might be possible. The first argument to info() contains tainted data. The tainted data originated from an earlier call to AnnotationVirtualController.vc_annotation_entry.\u003c/span\u003e \u003cspan\u003eAvoid directly embedding user input in log files when possible.  Sanitize untrusted data used to construct log entries by using a safe logging mechanism such as the OWASP ESAPI Logger, which will automatically remove unexpected carriage returns and line feeds and can be configured to use HTML entity encoding for non-alphanumeric data.  Alternatively, some of the XSS escaping functions from the OWASP Java Encoder project will also sanitize CRLF sequences.  Only create a custom blocklist when absolutely necessary.  Always validate untrusted input to ensure that it conforms to the expected format, using centralized data validation routines when possible.\u003c/span\u003e \u003cspan\u003eReferences: \u003ca href\u003d\"https://cwe.mitre.org/data/definitions/117.html\"\u003eCWE\u003c/a\u003e \u003ca href\u003d\"https://owasp.org/www-community/attacks/Log_Injection\"\u003eOWASP\u003c/a\u003e \u003ca href\u003d\"https://docs.veracode.com/r/review_cleansers?tocId\u003dnYnZqAenFFZmB75MQrZwuA\"\u003eSupported Cleansers\u003c/a\u003e\u003c/span\u003e",
-      "files": {
-        "source_file": {
-          "file": "com/veracode/verademo/controller/UserController.java",
-          "line": 114,
-          "function_name": "showLogin",
-          "qualified_function_name": "com.veracode.verademo.controller.UserController.showLogin",
-          "function_prototype": "java.lang.String showLogin(java.lang.String, java.lang.String, org.springframework.ui.Model, javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)",
-          "scope": "com.veracode.verademo.controller.UserController"
-        }
-      },
-      "flaw_match": {
-        "procedure_hash": "4166923562",
-        "prototype_hash": "869084474",
-        "flaw_hash": "2964781463",
-        "flaw_hash_count": 1,
-        "flaw_hash_ordinal": 1,
-        "cause_hash": "476343702",
-        "cause_hash_count": 1,
-        "cause_hash_ordinal": 1,
-        "cause_hash2": "258080840",
-        "cause_hash2_ordinal": "1"
-      },
-      "stack_dumps": {
-        "stack_dump": [
-          {}
-        ]
-      },
-      "flaw_details_link": "https://downloads.veracode.com/securityscan/cwe/v4/java/117.html"
     },
     {
       "title": "javax.servlet.http.HttpServletResponse.addCookie",
@@ -2368,44 +2330,6 @@
         ]
       },
       "flaw_details_link": "https://downloads.veracode.com/securityscan/cwe/v4/java/80.html"
-    },
-    {
-      "title": "org.apache.log4j.Category.info",
-      "issue_id": 1211,
-      "gob": "B",
-      "severity": 3,
-      "issue_type_id": "taint",
-      "issue_type": "Improper Output Neutralization for Logs",
-      "cwe_id": "117",
-      "display_text": "\u003cspan\u003eThis call to org.apache.log4j.Category.info() could result in a log forging attack.  Writing untrusted data into a log file allows an attacker to forge log entries or inject malicious content into log files.  Corrupted log files can be used to cover an attacker\u0027s tracks or as a delivery mechanism for an attack on a log viewing or processing utility.  For example, if a web administrator uses a browser-based utility to review logs, a cross-site scripting attack might be possible. The first argument to info() contains tainted data from the variable blabbersSql. The tainted data originated from an earlier call to AnnotationVirtualController.vc_annotation_entry.\u003c/span\u003e \u003cspan\u003eAvoid directly embedding user input in log files when possible.  Sanitize untrusted data used to construct log entries by using a safe logging mechanism such as the OWASP ESAPI Logger, which will automatically remove unexpected carriage returns and line feeds and can be configured to use HTML entity encoding for non-alphanumeric data.  Alternatively, some of the XSS escaping functions from the OWASP Java Encoder project will also sanitize CRLF sequences.  Only create a custom blocklist when absolutely necessary.  Always validate untrusted input to ensure that it conforms to the expected format, using centralized data validation routines when possible.\u003c/span\u003e \u003cspan\u003eReferences: \u003ca href\u003d\"https://cwe.mitre.org/data/definitions/117.html\"\u003eCWE\u003c/a\u003e \u003ca href\u003d\"https://owasp.org/www-community/attacks/Log_Injection\"\u003eOWASP\u003c/a\u003e \u003ca href\u003d\"https://docs.veracode.com/r/review_cleansers?tocId\u003dnYnZqAenFFZmB75MQrZwuA\"\u003eSupported Cleansers\u003c/a\u003e\u003c/span\u003e",
-      "files": {
-        "source_file": {
-          "file": "com/veracode/verademo/controller/BlabController.java",
-          "line": 486,
-          "function_name": "showBlabbers",
-          "qualified_function_name": "com.veracode.verademo.controller.BlabController.showBlabbers",
-          "function_prototype": "java.lang.String showBlabbers(java.lang.String, org.springframework.ui.Model, javax.servlet.http.HttpServletRequest)",
-          "scope": "com.veracode.verademo.controller.BlabController"
-        }
-      },
-      "flaw_match": {
-        "procedure_hash": "1426715244",
-        "prototype_hash": "364381741",
-        "flaw_hash": "239218340",
-        "flaw_hash_count": 8,
-        "flaw_hash_ordinal": 6,
-        "cause_hash": "1176028798",
-        "cause_hash_count": 1,
-        "cause_hash_ordinal": 1,
-        "cause_hash2": "1522093433",
-        "cause_hash2_ordinal": "3"
-      },
-      "stack_dumps": {
-        "stack_dump": [
-          {}
-        ]
-      },
-      "flaw_details_link": "https://downloads.veracode.com/securityscan/cwe/v4/java/117.html"
     },
     {
       "title": "org.apache.log4j.Category.info",
@@ -5812,10 +5736,14 @@
         "cause_hash2": "1522093433",
         "cause_hash2_ordinal": "3"
       },
-      "stack_dumps": {},
+      "stack_dumps": {
+        "stack_dump": [
+          {}
+        ]
+      },
       "flaw_details_link": "https://downloads.veracode.com/securityscan/cwe/v4/java/80.html"
     }
   ],
-  "pipeline_scan": "22.11.0-0",
+  "pipeline_scan": "23.4.1-0",
   "dev_stage": "DEVELOPMENT"
 }
