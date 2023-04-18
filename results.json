@@ -4,15 +4,15 @@
       "href": "/"
     },
     "self": {
-      "href": "/scans/d9859573-f578-44c6-8ab0-515105774eed/findings"
+      "href": "/scans/a3926713-1fe2-4e0b-ae10-2222f7ad3a57/findings"
     },
     "help": {
       "href": "https://help.veracode.com/reader/tS9CaFwL4_lbIEWWomsJoA/ovfZGgu96UINQxIuTqRDwg"
     }
   },
-  "scan_id": "d9859573-f578-44c6-8ab0-515105774eed",
+  "scan_id": "a3926713-1fe2-4e0b-ae10-2222f7ad3a57",
   "scan_status": "SUCCESS",
-  "message": "Scan successful. Results size: 345688 bytes",
+  "message": "Scan successful. Results size: 344390 bytes",
   "modules": [
     "verademo.war",
     "JS files within verademo.war"
@@ -2713,7 +2713,7 @@
     },
     {
       "title": "javax.servlet.jsp.JspWriter.print",
-      "issue_id": 1257,
+      "issue_id": 1256,
       "gob": "B",
       "severity": 3,
       "issue_type_id": "taint",
@@ -2827,7 +2827,7 @@
     },
     {
       "title": "javax.servlet.jsp.JspWriter.print",
-      "issue_id": 1265,
+      "issue_id": 1263,
       "gob": "B",
       "severity": 3,
       "issue_type_id": "taint",
@@ -2865,7 +2865,7 @@
     },
     {
       "title": "javax.servlet.jsp.JspWriter.print",
-      "issue_id": 1256,
+      "issue_id": 1255,
       "gob": "B",
       "severity": 3,
       "issue_type_id": "taint",
@@ -2903,7 +2903,7 @@
     },
     {
       "title": "javax.servlet.jsp.JspWriter.print",
-      "issue_id": 1263,
+      "issue_id": 1261,
       "gob": "B",
       "severity": 3,
       "issue_type_id": "taint",
@@ -2941,7 +2941,7 @@
     },
     {
       "title": "javax.servlet.jsp.JspWriter.print",
-      "issue_id": 1255,
+      "issue_id": 1254,
       "gob": "B",
       "severity": 3,
       "issue_type_id": "taint",
@@ -2979,7 +2979,7 @@
     },
     {
       "title": "javax.servlet.jsp.JspWriter.print",
-      "issue_id": 1253,
+      "issue_id": 1252,
       "gob": "B",
       "severity": 3,
       "issue_type_id": "taint",
@@ -3055,7 +3055,7 @@
     },
     {
       "title": "javax.servlet.jsp.JspWriter.print",
-      "issue_id": 1271,
+      "issue_id": 1270,
       "gob": "B",
       "severity": 3,
       "issue_type_id": "taint",
@@ -3169,7 +3169,7 @@
     },
     {
       "title": "javax.servlet.jsp.JspWriter.print",
-      "issue_id": 1262,
+      "issue_id": 1260,
       "gob": "B",
       "severity": 3,
       "issue_type_id": "taint",
@@ -3283,7 +3283,7 @@
     },
     {
       "title": "javax.servlet.jsp.JspWriter.print",
-      "issue_id": 1251,
+      "issue_id": 1274,
       "gob": "B",
       "severity": 3,
       "issue_type_id": "taint",
@@ -3301,7 +3301,7 @@
         }
       },
       "flaw_match": {
-        "procedure_hash": "2882052425",
+        "procedure_hash": "1333456332",
         "prototype_hash": "3087822160",
         "flaw_hash": "3765405848",
         "flaw_hash_count": 3,
@@ -3321,7 +3321,7 @@
     },
     {
       "title": "javax.servlet.jsp.JspWriter.print",
-      "issue_id": 1261,
+      "issue_id": 1251,
       "gob": "B",
       "severity": 3,
       "issue_type_id": "taint",
@@ -3339,7 +3339,7 @@
         }
       },
       "flaw_match": {
-        "procedure_hash": "2882052425",
+        "procedure_hash": "1333456332",
         "prototype_hash": "3087822160",
         "flaw_hash": "3765405848",
         "flaw_hash_count": 3,
@@ -3359,7 +3359,7 @@
     },
     {
       "title": "javax.servlet.jsp.JspWriter.print",
-      "issue_id": 1275,
+      "issue_id": 1269,
       "gob": "B",
       "severity": 3,
       "issue_type_id": "taint",
@@ -3377,7 +3377,7 @@
         }
       },
       "flaw_match": {
-        "procedure_hash": "2882052425",
+        "procedure_hash": "1333456332",
         "prototype_hash": "3087822160",
         "flaw_hash": "3765405848",
         "flaw_hash_count": 3,
@@ -3397,7 +3397,7 @@
     },
     {
       "title": "javax.servlet.jsp.JspWriter.print",
-      "issue_id": 1274,
+      "issue_id": 1273,
       "gob": "B",
       "severity": 3,
       "issue_type_id": "taint",
@@ -3511,7 +3511,7 @@
     },
     {
       "title": "javax.servlet.jsp.JspWriter.print",
-      "issue_id": 1260,
+      "issue_id": 1259,
       "gob": "B",
       "severity": 3,
       "issue_type_id": "taint",
@@ -3625,7 +3625,7 @@
     },
     {
       "title": "javax.servlet.jsp.JspWriter.print",
-      "issue_id": 1269,
+      "issue_id": 1267,
       "gob": "B",
       "severity": 3,
       "issue_type_id": "taint",
@@ -3663,7 +3663,7 @@
     },
     {
       "title": "javax.servlet.jsp.JspWriter.print",
-      "issue_id": 1259,
+      "issue_id": 1258,
       "gob": "B",
       "severity": 3,
       "issue_type_id": "taint",
@@ -3777,7 +3777,7 @@
     },
     {
       "title": "javax.servlet.jsp.JspWriter.print",
-      "issue_id": 1258,
+      "issue_id": 1257,
       "gob": "B",
       "severity": 3,
       "issue_type_id": "taint",
@@ -3815,7 +3815,7 @@
     },
     {
       "title": "javax.servlet.jsp.JspWriter.print",
-      "issue_id": 1267,
+      "issue_id": 1265,
       "gob": "B",
       "severity": 3,
       "issue_type_id": "taint",
@@ -3891,7 +3891,7 @@
     },
     {
       "title": "javax.servlet.jsp.JspWriter.print",
-      "issue_id": 1272,
+      "issue_id": 1271,
       "gob": "B",
       "severity": 3,
       "issue_type_id": "taint",
@@ -4761,7 +4761,7 @@
     },
     {
       "title": "javax.servlet.jsp.JspWriter.print",
-      "issue_id": 1266,
+      "issue_id": 1264,
       "gob": "B",
       "severity": 2,
       "issue_type_id": "taint",
@@ -4799,7 +4799,7 @@
     },
     {
       "title": "javax.servlet.jsp.JspWriter.print",
-      "issue_id": 1264,
+      "issue_id": 1262,
       "gob": "B",
       "severity": 2,
       "issue_type_id": "taint",
@@ -4837,7 +4837,7 @@
     },
     {
       "title": "javax.servlet.jsp.JspWriter.print",
-      "issue_id": 1254,
+      "issue_id": 1253,
       "gob": "B",
       "severity": 2,
       "issue_type_id": "taint",
@@ -4875,7 +4875,7 @@
     },
     {
       "title": "javax.servlet.jsp.JspWriter.print",
-      "issue_id": 1252,
+      "issue_id": 1275,
       "gob": "B",
       "severity": 2,
       "issue_type_id": "taint",
@@ -4893,7 +4893,7 @@
         }
       },
       "flaw_match": {
-        "procedure_hash": "2882052425",
+        "procedure_hash": "1333456332",
         "prototype_hash": "3087822160",
         "flaw_hash": "3765405848",
         "flaw_hash_count": 3,
@@ -4951,7 +4951,7 @@
     },
     {
       "title": "javax.servlet.jsp.JspWriter.print",
-      "issue_id": 1270,
+      "issue_id": 1268,
       "gob": "B",
       "severity": 2,
       "issue_type_id": "taint",
@@ -4989,7 +4989,7 @@
     },
     {
       "title": "javax.servlet.jsp.JspWriter.print",
-      "issue_id": 1268,
+      "issue_id": 1266,
       "gob": "B",
       "severity": 2,
       "issue_type_id": "taint",
@@ -5636,40 +5636,6 @@
       },
       "stack_dumps": {},
       "flaw_details_link": "https://downloads.veracode.com/securityscan/cwe/v4/java/404.html"
-    },
-    {
-      "title": "eval",
-      "issue_id": 1003,
-      "gob": "B",
-      "severity": 5,
-      "issue_type_id": "taint",
-      "issue_type": "Improper Neutralization of Directives in Dynamically Evaluated Code (\u0027Eval Injection\u0027)",
-      "cwe_id": "95",
-      "display_text": "\u003cspan\u003eThis call to eval() contains untrusted input or potentially untrusted data.  If this input could be modified by an attacker, arbitrary JS code could be executed. \u003c/span\u003e \u003cspan\u003eValidate all untrusted and untrusted input to ensure that it conforms to the expected format, using centralized data validation routines when possible.  In general, avoid executing code derived from untrusted input.\u003c/span\u003e \u003cspan\u003eReferences: \u003ca href\u003d\"https://cwe.mitre.org/data/definitions/95.html\"\u003eCWE\u003c/a\u003e\u003c/span\u003e",
-      "files": {
-        "source_file": {
-          "file": "WEB-INF/views/login.jsp",
-          "line": 36,
-          "function_name": "!main",
-          "qualified_function_name": "!main",
-          "function_prototype": "!main() : void",
-          "scope": "UNKNOWN"
-        }
-      },
-      "flaw_match": {
-        "procedure_hash": "3915450586",
-        "prototype_hash": "211846691",
-        "flaw_hash": "3524018929",
-        "flaw_hash_count": 1,
-        "flaw_hash_ordinal": 1,
-        "cause_hash": "4199849900",
-        "cause_hash_count": 1,
-        "cause_hash_ordinal": 1,
-        "cause_hash2": "489697663",
-        "cause_hash2_ordinal": "1"
-      },
-      "stack_dumps": {},
-      "flaw_details_link": "https://downloads.veracode.com/securityscan/cwe/v4/java/95.html"
     },
     {
       "title": "jQueryResult.attr",
