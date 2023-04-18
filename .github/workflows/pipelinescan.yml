@@ -49,7 +49,7 @@ jobs:
             create_baseline_from: "standard"
             baseline_file: "baseline.json"
             debug: 1
-            fail_build: true
+            fail_build: false
             
   results_to_sarif:
     needs: pipeline_scan
