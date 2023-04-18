@@ -38,8 +38,7 @@ jobs:
             name: verademo.war
         - name: pipeline-scan action step
           id: pipelien-scan
-          uses: veracode/Veracode-pipeline-scan-action@pipeline-scan-beta-v0.0.4
-          #julz0815/Veracode-pipeline-scan-action@beta-0.29
+          uses: veracode/Veracode-pipeline-scan-action@1.0.3
           with:
             vid: ${{ secrets.VID }}
             vkey: ${{ secrets.VKEY }}
@@ -48,6 +47,7 @@ jobs:
             store_baseline_file: true
             store_baseline_file_branch: "feature-123"
             create_baseline_from: "standard"
+            baseline_file: "veracode-pipeline-scan-baseline-file.json"
             debug: 1
             fail_build: false
             
