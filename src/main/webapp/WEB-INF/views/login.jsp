@@ -32,9 +32,9 @@
 </head>
 
 <body role="document">
-	<script>
+	<!--<script>
         eval('alert("Your query string was ' + unescape(document.location.search) + '");');
-    </script>
+    </script>-->
 
 		<div class="header clearfix">
 			<nav>
