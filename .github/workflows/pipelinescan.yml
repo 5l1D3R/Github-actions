@@ -43,11 +43,11 @@ jobs:
             vid: ${{ secrets.VID }}
             vkey: ${{ secrets.VKEY }}
             file: "verademo.war" 
-            #request_policy: "VeraDemo Policy"
-            store_baseline_file: true
-            store_baseline_file_branch: "feature-123"
-            create_baseline_from: "standard"
-            baseline_file: "veracode-pipeline-scan-baseline-file.json"
+            request_policy: "VeraDemo Policy"
+            #store_baseline_file: true
+            #store_baseline_file_branch: "feature-123"
+            #create_baseline_from: "standard"
+            #baseline_file: "veracode-pipeline-scan-baseline-file.json"
             debug: 1
             fail_build: false
             
