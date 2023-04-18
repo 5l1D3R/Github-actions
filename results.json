@@ -4,127 +4,21 @@
       "href": "/"
     },
     "self": {
-      "href": "/scans/72448f70-dab9-4620-98fc-9de76040bc5d/findings"
+      "href": "/scans/4ee188a7-f751-4bf5-9a55-3f5da57e07f1/findings"
     },
     "help": {
       "href": "https://help.veracode.com/reader/tS9CaFwL4_lbIEWWomsJoA/ovfZGgu96UINQxIuTqRDwg"
     }
   },
-  "scan_id": "72448f70-dab9-4620-98fc-9de76040bc5d",
+  "scan_id": "4ee188a7-f751-4bf5-9a55-3f5da57e07f1",
   "scan_status": "SUCCESS",
-  "message": "Scan successful. Results size: 344390 bytes",
+  "message": "Scan successful. Results size: 345688 bytes",
   "modules": [
     "verademo.war",
     "JS files within verademo.war"
   ],
   "modules_count": 2,
   "findings": [
-    {
-      "title": "jQueryResult.attr",
-      "issue_id": 1000,
-      "gob": "B",
-      "severity": 3,
-      "issue_type_id": "taint",
-      "issue_type": "Improper Neutralization of Script-Related HTML Tags in a Web Page (Basic XSS)",
-      "cwe_id": "80",
-      "display_text": "\u003cspan\u003eThis call to jQueryResult.attr() contains a cross-site scripting (XSS) flaw.  The application populates the HTTP response with untrusted input, allowing an attacker to embed malicious content, such as Javascript code, which will be executed in the context of the victim\u0027s browser.  XSS vulnerabilities are commonly exploited to steal or manipulate cookies, modify presentation of content, and compromise confidential information, with new attack vectors being discovered on a regular basis. \u003c/span\u003e \u003cspan\u003eUse contextual escaping on all untrusted data before using it to construct any portion of an HTTP response.  The escaping method should be chosen based on the specific use case of the untrusted data, otherwise it may not protect fully against the attack. For example, if the data is being written to the body of an HTML page, use HTML entity escaping; if the data is being written to an attribute, use attribute escaping; etc.  Both the OWASP Java Encoder library and the Microsoft AntiXSS library provide contextual escaping methods. For more details on contextual escaping, see https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.md. In addition, as a best practice, always validate untrusted input to ensure that it conforms to the expected format, using centralized data validation routines when possible.\u003c/span\u003e \u003cspan\u003eReferences: \u003ca href\u003d\"https://cwe.mitre.org/data/definitions/79.html\"\u003eCWE\u003c/a\u003e \u003ca href\u003d\"https://owasp.org/www-community/attacks/xss/\"\u003eOWASP\u003c/a\u003e \u003ca href\u003d\"https://docs.veracode.com/r/review_cleansers\"\u003eSupported Cleansers\u003c/a\u003e\u003c/span\u003e",
-      "files": {
-        "source_file": {
-          "file": "WEB-INF/views/profile.jsp",
-          "line": 248,
-          "function_name": "lambda_3",
-          "qualified_function_name": "lambda_3",
-          "function_prototype": "lambda_3(: any,  : any,  : any, ...) : any",
-          "scope": "UNKNOWN"
-        }
-      },
-      "flaw_match": {
-        "procedure_hash": "460510356",
-        "prototype_hash": "3760276193",
-        "flaw_hash": "3224440831",
-        "flaw_hash_count": 1,
-        "flaw_hash_ordinal": 1,
-        "cause_hash": "2948331053",
-        "cause_hash_count": 1,
-        "cause_hash_ordinal": 1,
-        "cause_hash2": "80696732",
-        "cause_hash2_ordinal": "1"
-      },
-      "stack_dumps": {},
-      "flaw_details_link": "https://downloads.veracode.com/securityscan/cwe/v4/java/80.html"
-    },
-    {
-      "title": "jQueryResult.append",
-      "issue_id": 1002,
-      "gob": "B",
-      "severity": 3,
-      "issue_type_id": "taint",
-      "issue_type": "Improper Neutralization of Script-Related HTML Tags in a Web Page (Basic XSS)",
-      "cwe_id": "80",
-      "display_text": "\u003cspan\u003eThis call to jQueryResult.append() contains a cross-site scripting (XSS) flaw.  The application populates the HTTP response with untrusted input, allowing an attacker to embed malicious content, such as Javascript code, which will be executed in the context of the victim\u0027s browser.  XSS vulnerabilities are commonly exploited to steal or manipulate cookies, modify presentation of content, and compromise confidential information, with new attack vectors being discovered on a regular basis. \u003c/span\u003e \u003cspan\u003eUse contextual escaping on all untrusted data before using it to construct any portion of an HTTP response.  The escaping method should be chosen based on the specific use case of the untrusted data, otherwise it may not protect fully against the attack. For example, if the data is being written to the body of an HTML page, use HTML entity escaping; if the data is being written to an attribute, use attribute escaping; etc.  Both the OWASP Java Encoder library and the Microsoft AntiXSS library provide contextual escaping methods. For more details on contextual escaping, see https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.md. In addition, as a best practice, always validate untrusted input to ensure that it conforms to the expected format, using centralized data validation routines when possible.\u003c/span\u003e \u003cspan\u003eReferences: \u003ca href\u003d\"https://cwe.mitre.org/data/definitions/79.html\"\u003eCWE\u003c/a\u003e \u003ca href\u003d\"https://owasp.org/www-community/attacks/xss/\"\u003eOWASP\u003c/a\u003e \u003ca href\u003d\"https://docs.veracode.com/r/review_cleansers\"\u003eSupported Cleansers\u003c/a\u003e\u003c/span\u003e",
-      "files": {
-        "source_file": {
-          "file": "WEB-INF/views/profile.jsp",
-          "line": 253,
-          "function_name": "lambda_2",
-          "qualified_function_name": "lambda_2",
-          "function_prototype": "lambda_2(: any,  : any, ...) : any",
-          "scope": "UNKNOWN"
-        }
-      },
-      "flaw_match": {
-        "procedure_hash": "967856201",
-        "prototype_hash": "2659999086",
-        "flaw_hash": "3103718343",
-        "flaw_hash_count": 1,
-        "flaw_hash_ordinal": 1,
-        "cause_hash": "2323626286",
-        "cause_hash_count": 1,
-        "cause_hash_ordinal": 1,
-        "cause_hash2": "438364638",
-        "cause_hash2_ordinal": "1"
-      },
-      "stack_dumps": {},
-      "flaw_details_link": "https://downloads.veracode.com/securityscan/cwe/v4/java/80.html"
-    },
-    {
-      "title": "jQueryResult.append",
-      "issue_id": 1001,
-      "gob": "B",
-      "severity": 3,
-      "issue_type_id": "taint",
-      "issue_type": "Improper Neutralization of Script-Related HTML Tags in a Web Page (Basic XSS)",
-      "cwe_id": "80",
-      "display_text": "\u003cspan\u003eThis call to jQueryResult.append() contains a cross-site scripting (XSS) flaw.  The application populates the HTTP response with untrusted input, allowing an attacker to embed malicious content, such as Javascript code, which will be executed in the context of the victim\u0027s browser.  XSS vulnerabilities are commonly exploited to steal or manipulate cookies, modify presentation of content, and compromise confidential information, with new attack vectors being discovered on a regular basis. \u003c/span\u003e \u003cspan\u003eUse contextual escaping on all untrusted data before using it to construct any portion of an HTTP response.  The escaping method should be chosen based on the specific use case of the untrusted data, otherwise it may not protect fully against the attack. For example, if the data is being written to the body of an HTML page, use HTML entity escaping; if the data is being written to an attribute, use attribute escaping; etc.  Both the OWASP Java Encoder library and the Microsoft AntiXSS library provide contextual escaping methods. For more details on contextual escaping, see https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.md. In addition, as a best practice, always validate untrusted input to ensure that it conforms to the expected format, using centralized data validation routines when possible.\u003c/span\u003e \u003cspan\u003eReferences: \u003ca href\u003d\"https://cwe.mitre.org/data/definitions/79.html\"\u003eCWE\u003c/a\u003e \u003ca href\u003d\"https://owasp.org/www-community/attacks/xss/\"\u003eOWASP\u003c/a\u003e \u003ca href\u003d\"https://docs.veracode.com/r/review_cleansers\"\u003eSupported Cleansers\u003c/a\u003e\u003c/span\u003e",
-      "files": {
-        "source_file": {
-          "file": "WEB-INF/views/feed.jsp",
-          "line": 175,
-          "function_name": "lambda_1",
-          "qualified_function_name": "lambda_1",
-          "function_prototype": "lambda_1(: any,  : any, ...) : any",
-          "scope": "UNKNOWN"
-        }
-      },
-      "flaw_match": {
-        "procedure_hash": "4141575645",
-        "prototype_hash": "1826537584",
-        "flaw_hash": "3132762339",
-        "flaw_hash_count": 1,
-        "flaw_hash_ordinal": 1,
-        "cause_hash": "1176028798",
-        "cause_hash_count": 1,
-        "cause_hash_ordinal": 1,
-        "cause_hash2": "1522093433",
-        "cause_hash2_ordinal": "3"
-      },
-      "stack_dumps": {
-        "stack_dump": [
-          {}
-        ]
-      },
-      "flaw_details_link": "https://downloads.veracode.com/securityscan/cwe/v4/java/80.html"
-    },
     {
       "title": "java.lang.Runtime.exec",
       "issue_id": 1245,
@@ -2819,7 +2713,7 @@
     },
     {
       "title": "javax.servlet.jsp.JspWriter.print",
-      "issue_id": 1256,
+      "issue_id": 1257,
       "gob": "B",
       "severity": 3,
       "issue_type_id": "taint",
@@ -2933,7 +2827,7 @@
     },
     {
       "title": "javax.servlet.jsp.JspWriter.print",
-      "issue_id": 1263,
+      "issue_id": 1265,
       "gob": "B",
       "severity": 3,
       "issue_type_id": "taint",
@@ -2971,7 +2865,7 @@
     },
     {
       "title": "javax.servlet.jsp.JspWriter.print",
-      "issue_id": 1255,
+      "issue_id": 1256,
       "gob": "B",
       "severity": 3,
       "issue_type_id": "taint",
@@ -3009,7 +2903,7 @@
     },
     {
       "title": "javax.servlet.jsp.JspWriter.print",
-      "issue_id": 1261,
+      "issue_id": 1263,
       "gob": "B",
       "severity": 3,
       "issue_type_id": "taint",
@@ -3047,7 +2941,7 @@
     },
     {
       "title": "javax.servlet.jsp.JspWriter.print",
-      "issue_id": 1254,
+      "issue_id": 1255,
       "gob": "B",
       "severity": 3,
       "issue_type_id": "taint",
@@ -3085,7 +2979,7 @@
     },
     {
       "title": "javax.servlet.jsp.JspWriter.print",
-      "issue_id": 1252,
+      "issue_id": 1253,
       "gob": "B",
       "severity": 3,
       "issue_type_id": "taint",
@@ -3161,7 +3055,7 @@
     },
     {
       "title": "javax.servlet.jsp.JspWriter.print",
-      "issue_id": 1270,
+      "issue_id": 1271,
       "gob": "B",
       "severity": 3,
       "issue_type_id": "taint",
@@ -3275,7 +3169,7 @@
     },
     {
       "title": "javax.servlet.jsp.JspWriter.print",
-      "issue_id": 1260,
+      "issue_id": 1262,
       "gob": "B",
       "severity": 3,
       "issue_type_id": "taint",
@@ -3389,7 +3283,7 @@
     },
     {
       "title": "javax.servlet.jsp.JspWriter.print",
-      "issue_id": 1274,
+      "issue_id": 1251,
       "gob": "B",
       "severity": 3,
       "issue_type_id": "taint",
@@ -3407,7 +3301,7 @@
         }
       },
       "flaw_match": {
-        "procedure_hash": "1333456332",
+        "procedure_hash": "2882052425",
         "prototype_hash": "3087822160",
         "flaw_hash": "3765405848",
         "flaw_hash_count": 3,
@@ -3427,7 +3321,7 @@
     },
     {
       "title": "javax.servlet.jsp.JspWriter.print",
-      "issue_id": 1251,
+      "issue_id": 1261,
       "gob": "B",
       "severity": 3,
       "issue_type_id": "taint",
@@ -3445,7 +3339,7 @@
         }
       },
       "flaw_match": {
-        "procedure_hash": "1333456332",
+        "procedure_hash": "2882052425",
         "prototype_hash": "3087822160",
         "flaw_hash": "3765405848",
         "flaw_hash_count": 3,
@@ -3465,7 +3359,7 @@
     },
     {
       "title": "javax.servlet.jsp.JspWriter.print",
-      "issue_id": 1269,
+      "issue_id": 1275,
       "gob": "B",
       "severity": 3,
       "issue_type_id": "taint",
@@ -3483,7 +3377,7 @@
         }
       },
       "flaw_match": {
-        "procedure_hash": "1333456332",
+        "procedure_hash": "2882052425",
         "prototype_hash": "3087822160",
         "flaw_hash": "3765405848",
         "flaw_hash_count": 3,
@@ -3503,7 +3397,7 @@
     },
     {
       "title": "javax.servlet.jsp.JspWriter.print",
-      "issue_id": 1273,
+      "issue_id": 1274,
       "gob": "B",
       "severity": 3,
       "issue_type_id": "taint",
@@ -3617,7 +3511,7 @@
     },
     {
       "title": "javax.servlet.jsp.JspWriter.print",
-      "issue_id": 1259,
+      "issue_id": 1260,
       "gob": "B",
       "severity": 3,
       "issue_type_id": "taint",
@@ -3731,7 +3625,7 @@
     },
     {
       "title": "javax.servlet.jsp.JspWriter.print",
-      "issue_id": 1267,
+      "issue_id": 1269,
       "gob": "B",
       "severity": 3,
       "issue_type_id": "taint",
@@ -3769,7 +3663,7 @@
     },
     {
       "title": "javax.servlet.jsp.JspWriter.print",
-      "issue_id": 1258,
+      "issue_id": 1259,
       "gob": "B",
       "severity": 3,
       "issue_type_id": "taint",
@@ -3883,7 +3777,7 @@
     },
     {
       "title": "javax.servlet.jsp.JspWriter.print",
-      "issue_id": 1257,
+      "issue_id": 1258,
       "gob": "B",
       "severity": 3,
       "issue_type_id": "taint",
@@ -3921,7 +3815,7 @@
     },
     {
       "title": "javax.servlet.jsp.JspWriter.print",
-      "issue_id": 1265,
+      "issue_id": 1267,
       "gob": "B",
       "severity": 3,
       "issue_type_id": "taint",
@@ -3997,7 +3891,7 @@
     },
     {
       "title": "javax.servlet.jsp.JspWriter.print",
-      "issue_id": 1271,
+      "issue_id": 1272,
       "gob": "B",
       "severity": 3,
       "issue_type_id": "taint",
@@ -4867,7 +4761,7 @@
     },
     {
       "title": "javax.servlet.jsp.JspWriter.print",
-      "issue_id": 1264,
+      "issue_id": 1266,
       "gob": "B",
       "severity": 2,
       "issue_type_id": "taint",
@@ -4905,7 +4799,7 @@
     },
     {
       "title": "javax.servlet.jsp.JspWriter.print",
-      "issue_id": 1262,
+      "issue_id": 1264,
       "gob": "B",
       "severity": 2,
       "issue_type_id": "taint",
@@ -4943,7 +4837,7 @@
     },
     {
       "title": "javax.servlet.jsp.JspWriter.print",
-      "issue_id": 1253,
+      "issue_id": 1254,
       "gob": "B",
       "severity": 2,
       "issue_type_id": "taint",
@@ -4981,7 +4875,7 @@
     },
     {
       "title": "javax.servlet.jsp.JspWriter.print",
-      "issue_id": 1275,
+      "issue_id": 1252,
       "gob": "B",
       "severity": 2,
       "issue_type_id": "taint",
@@ -4999,7 +4893,7 @@
         }
       },
       "flaw_match": {
-        "procedure_hash": "1333456332",
+        "procedure_hash": "2882052425",
         "prototype_hash": "3087822160",
         "flaw_hash": "3765405848",
         "flaw_hash_count": 3,
@@ -5057,7 +4951,7 @@
     },
     {
       "title": "javax.servlet.jsp.JspWriter.print",
-      "issue_id": 1268,
+      "issue_id": 1270,
       "gob": "B",
       "severity": 2,
       "issue_type_id": "taint",
@@ -5095,7 +4989,7 @@
     },
     {
       "title": "javax.servlet.jsp.JspWriter.print",
-      "issue_id": 1266,
+      "issue_id": 1268,
       "gob": "B",
       "severity": 2,
       "issue_type_id": "taint",
@@ -5742,6 +5636,146 @@
       },
       "stack_dumps": {},
       "flaw_details_link": "https://downloads.veracode.com/securityscan/cwe/v4/java/404.html"
+    },
+    {
+      "title": "eval",
+      "issue_id": 1003,
+      "gob": "B",
+      "severity": 5,
+      "issue_type_id": "taint",
+      "issue_type": "Improper Neutralization of Directives in Dynamically Evaluated Code (\u0027Eval Injection\u0027)",
+      "cwe_id": "95",
+      "display_text": "\u003cspan\u003eThis call to eval() contains untrusted input or potentially untrusted data.  If this input could be modified by an attacker, arbitrary JS code could be executed. \u003c/span\u003e \u003cspan\u003eValidate all untrusted and untrusted input to ensure that it conforms to the expected format, using centralized data validation routines when possible.  In general, avoid executing code derived from untrusted input.\u003c/span\u003e \u003cspan\u003eReferences: \u003ca href\u003d\"https://cwe.mitre.org/data/definitions/95.html\"\u003eCWE\u003c/a\u003e\u003c/span\u003e",
+      "files": {
+        "source_file": {
+          "file": "WEB-INF/views/login.jsp",
+          "line": 36,
+          "function_name": "!main",
+          "qualified_function_name": "!main",
+          "function_prototype": "!main() : void",
+          "scope": "UNKNOWN"
+        }
+      },
+      "flaw_match": {
+        "procedure_hash": "3915450586",
+        "prototype_hash": "211846691",
+        "flaw_hash": "3524018929",
+        "flaw_hash_count": 1,
+        "flaw_hash_ordinal": 1,
+        "cause_hash": "4199849900",
+        "cause_hash_count": 1,
+        "cause_hash_ordinal": 1,
+        "cause_hash2": "489697663",
+        "cause_hash2_ordinal": "1"
+      },
+      "stack_dumps": {},
+      "flaw_details_link": "https://downloads.veracode.com/securityscan/cwe/v4/java/95.html"
+    },
+    {
+      "title": "jQueryResult.attr",
+      "issue_id": 1000,
+      "gob": "B",
+      "severity": 3,
+      "issue_type_id": "taint",
+      "issue_type": "Improper Neutralization of Script-Related HTML Tags in a Web Page (Basic XSS)",
+      "cwe_id": "80",
+      "display_text": "\u003cspan\u003eThis call to jQueryResult.attr() contains a cross-site scripting (XSS) flaw.  The application populates the HTTP response with untrusted input, allowing an attacker to embed malicious content, such as Javascript code, which will be executed in the context of the victim\u0027s browser.  XSS vulnerabilities are commonly exploited to steal or manipulate cookies, modify presentation of content, and compromise confidential information, with new attack vectors being discovered on a regular basis. \u003c/span\u003e \u003cspan\u003eUse contextual escaping on all untrusted data before using it to construct any portion of an HTTP response.  The escaping method should be chosen based on the specific use case of the untrusted data, otherwise it may not protect fully against the attack. For example, if the data is being written to the body of an HTML page, use HTML entity escaping; if the data is being written to an attribute, use attribute escaping; etc.  Both the OWASP Java Encoder library and the Microsoft AntiXSS library provide contextual escaping methods. For more details on contextual escaping, see https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.md. In addition, as a best practice, always validate untrusted input to ensure that it conforms to the expected format, using centralized data validation routines when possible.\u003c/span\u003e \u003cspan\u003eReferences: \u003ca href\u003d\"https://cwe.mitre.org/data/definitions/79.html\"\u003eCWE\u003c/a\u003e \u003ca href\u003d\"https://owasp.org/www-community/attacks/xss/\"\u003eOWASP\u003c/a\u003e \u003ca href\u003d\"https://docs.veracode.com/r/review_cleansers\"\u003eSupported Cleansers\u003c/a\u003e\u003c/span\u003e",
+      "files": {
+        "source_file": {
+          "file": "WEB-INF/views/profile.jsp",
+          "line": 248,
+          "function_name": "lambda_3",
+          "qualified_function_name": "lambda_3",
+          "function_prototype": "lambda_3(: any,  : any,  : any, ...) : any",
+          "scope": "UNKNOWN"
+        }
+      },
+      "flaw_match": {
+        "procedure_hash": "460510356",
+        "prototype_hash": "3760276193",
+        "flaw_hash": "3224440831",
+        "flaw_hash_count": 1,
+        "flaw_hash_ordinal": 1,
+        "cause_hash": "2948331053",
+        "cause_hash_count": 1,
+        "cause_hash_ordinal": 1,
+        "cause_hash2": "80696732",
+        "cause_hash2_ordinal": "1"
+      },
+      "stack_dumps": {},
+      "flaw_details_link": "https://downloads.veracode.com/securityscan/cwe/v4/java/80.html"
+    },
+    {
+      "title": "jQueryResult.append",
+      "issue_id": 1002,
+      "gob": "B",
+      "severity": 3,
+      "issue_type_id": "taint",
+      "issue_type": "Improper Neutralization of Script-Related HTML Tags in a Web Page (Basic XSS)",
+      "cwe_id": "80",
+      "display_text": "\u003cspan\u003eThis call to jQueryResult.append() contains a cross-site scripting (XSS) flaw.  The application populates the HTTP response with untrusted input, allowing an attacker to embed malicious content, such as Javascript code, which will be executed in the context of the victim\u0027s browser.  XSS vulnerabilities are commonly exploited to steal or manipulate cookies, modify presentation of content, and compromise confidential information, with new attack vectors being discovered on a regular basis. \u003c/span\u003e \u003cspan\u003eUse contextual escaping on all untrusted data before using it to construct any portion of an HTTP response.  The escaping method should be chosen based on the specific use case of the untrusted data, otherwise it may not protect fully against the attack. For example, if the data is being written to the body of an HTML page, use HTML entity escaping; if the data is being written to an attribute, use attribute escaping; etc.  Both the OWASP Java Encoder library and the Microsoft AntiXSS library provide contextual escaping methods. For more details on contextual escaping, see https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.md. In addition, as a best practice, always validate untrusted input to ensure that it conforms to the expected format, using centralized data validation routines when possible.\u003c/span\u003e \u003cspan\u003eReferences: \u003ca href\u003d\"https://cwe.mitre.org/data/definitions/79.html\"\u003eCWE\u003c/a\u003e \u003ca href\u003d\"https://owasp.org/www-community/attacks/xss/\"\u003eOWASP\u003c/a\u003e \u003ca href\u003d\"https://docs.veracode.com/r/review_cleansers\"\u003eSupported Cleansers\u003c/a\u003e\u003c/span\u003e",
+      "files": {
+        "source_file": {
+          "file": "WEB-INF/views/profile.jsp",
+          "line": 253,
+          "function_name": "lambda_2",
+          "qualified_function_name": "lambda_2",
+          "function_prototype": "lambda_2(: any,  : any, ...) : any",
+          "scope": "UNKNOWN"
+        }
+      },
+      "flaw_match": {
+        "procedure_hash": "967856201",
+        "prototype_hash": "2659999086",
+        "flaw_hash": "3103718343",
+        "flaw_hash_count": 1,
+        "flaw_hash_ordinal": 1,
+        "cause_hash": "2323626286",
+        "cause_hash_count": 1,
+        "cause_hash_ordinal": 1,
+        "cause_hash2": "438364638",
+        "cause_hash2_ordinal": "1"
+      },
+      "stack_dumps": {},
+      "flaw_details_link": "https://downloads.veracode.com/securityscan/cwe/v4/java/80.html"
+    },
+    {
+      "title": "jQueryResult.append",
+      "issue_id": 1001,
+      "gob": "B",
+      "severity": 3,
+      "issue_type_id": "taint",
+      "issue_type": "Improper Neutralization of Script-Related HTML Tags in a Web Page (Basic XSS)",
+      "cwe_id": "80",
+      "display_text": "\u003cspan\u003eThis call to jQueryResult.append() contains a cross-site scripting (XSS) flaw.  The application populates the HTTP response with untrusted input, allowing an attacker to embed malicious content, such as Javascript code, which will be executed in the context of the victim\u0027s browser.  XSS vulnerabilities are commonly exploited to steal or manipulate cookies, modify presentation of content, and compromise confidential information, with new attack vectors being discovered on a regular basis. \u003c/span\u003e \u003cspan\u003eUse contextual escaping on all untrusted data before using it to construct any portion of an HTTP response.  The escaping method should be chosen based on the specific use case of the untrusted data, otherwise it may not protect fully against the attack. For example, if the data is being written to the body of an HTML page, use HTML entity escaping; if the data is being written to an attribute, use attribute escaping; etc.  Both the OWASP Java Encoder library and the Microsoft AntiXSS library provide contextual escaping methods. For more details on contextual escaping, see https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.md. In addition, as a best practice, always validate untrusted input to ensure that it conforms to the expected format, using centralized data validation routines when possible.\u003c/span\u003e \u003cspan\u003eReferences: \u003ca href\u003d\"https://cwe.mitre.org/data/definitions/79.html\"\u003eCWE\u003c/a\u003e \u003ca href\u003d\"https://owasp.org/www-community/attacks/xss/\"\u003eOWASP\u003c/a\u003e \u003ca href\u003d\"https://docs.veracode.com/r/review_cleansers\"\u003eSupported Cleansers\u003c/a\u003e\u003c/span\u003e",
+      "files": {
+        "source_file": {
+          "file": "WEB-INF/views/feed.jsp",
+          "line": 175,
+          "function_name": "lambda_1",
+          "qualified_function_name": "lambda_1",
+          "function_prototype": "lambda_1(: any,  : any, ...) : any",
+          "scope": "UNKNOWN"
+        }
+      },
+      "flaw_match": {
+        "procedure_hash": "4141575645",
+        "prototype_hash": "1826537584",
+        "flaw_hash": "3132762339",
+        "flaw_hash_count": 1,
+        "flaw_hash_ordinal": 1,
+        "cause_hash": "1176028798",
+        "cause_hash_count": 1,
+        "cause_hash_ordinal": 1,
+        "cause_hash2": "1522093433",
+        "cause_hash2_ordinal": "3"
+      },
+      "stack_dumps": {
+        "stack_dump": [
+          {}
+        ]
+      },
+      "flaw_details_link": "https://downloads.veracode.com/securityscan/cwe/v4/java/80.html"
     }
   ],
   "pipeline_scan": "23.4.1-0",
