@@ -15,6 +15,6 @@ jobs:
           SRCCLR_API_TOKEN: ${{ secrets.SRCCLR_API_TOKEN }}
         uses: veracode/veracode-sca@v2.1.6
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          create-issues: false
-          debug: false
+          #github_token: ${{ secrets.GITHUB_TOKEN }}
+          #reate-issues: false
+          debug: true
