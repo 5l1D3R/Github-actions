@@ -1,7 +1,7 @@
 on:
   pull_request:
     branches: [main]
-    
+
 jobs:
   veracode-sca-task:
     runs-on: ubuntu-latest
@@ -13,8 +13,8 @@ jobs:
       - name: Run Veracode SCA
         env:
           SRCCLR_API_TOKEN: ${{ secrets.SRCCLR_API_TOKEN }}
-        uses: veracode/veracode-sca@v2.0.63
+        uses: veracode/veracode-sca@v2.1.6
         with:
-#          github_token: ${{ secrets.GITHUB_TOKEN }}
-          create-issues: true
-#          debug: true
+          #github_token: ${{ secrets.GITHUB_TOKEN }}
+          #reate-issues: false
+          debug: false
